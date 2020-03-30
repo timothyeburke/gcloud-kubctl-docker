@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gcloud:
+    image: google/cloud-sdk:latest
+    environment:
+      CLOUDSDK_CONFIG: /config/mygcloud
+    volumes:
+      - ./gcloud-config:/config/mygcloud
+      - ./certs:/certs
