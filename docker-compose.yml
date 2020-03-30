@@ -7,3 +7,4 @@ services:
     volumes:
       - ./gcloud-config:/config/mygcloud
       - ./certs:/certs
+      - ./kube:/root/.kube
